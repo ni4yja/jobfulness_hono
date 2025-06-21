@@ -1,0 +1,14 @@
+{
+  "functions": {
+    "api/index.ts": {
+      "runtime": "vercel-edge"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/jobs",
+      "methods": ["POST"],
+      "dest": "api/index.ts"
+    }
+  ]
+}
