@@ -1,13 +1,12 @@
 {
   "functions": {
     "api/jobs.ts": {
-      "runtime": "vercel-edge"
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
     {
       "src": "/api/jobs",
-      "methods": ["GET"],
       "dest": "api/jobs.ts"
     }
   ]
